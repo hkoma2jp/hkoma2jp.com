@@ -1,7 +1,11 @@
 ---
-title: "TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど"
+type: post
+title: TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど
 date: "2020-12-13"
+tags: Tech,JavaScript,Next.js,TypeScript
 ---
+
+<!-- # TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど-->
 
 ## はじめに
 
