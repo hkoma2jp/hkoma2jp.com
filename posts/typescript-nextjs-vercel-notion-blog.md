@@ -1,7 +1,11 @@
 ---
-title: "TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど"
+type: post
+title: TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど
 date: "2020-12-13"
+tags: Tech,JavaScript,Next.js,TypeScript
 ---
+
+<!-- # TypeScript + Next.js + Vercel で、Notionから記事更新！5年ぶりn回目のブログ作ってみたけど-->
 
 ## はじめに
 
@@ -17,13 +21,11 @@ date: "2020-12-13"
 
 1. ijjk/notion-blog をclone。
 
-[https://github.com/ijjk/notion-blog](https://github.com/ijjk/notion-blog)
-
 [ijjk/notion-blog](https://github.com/ijjk/notion-blog)
 
 Next.js → TypeScript化したりとか、とにかく教材として面倒が少なくてありがたい😇
 
-2. .envに環境変数入れて、
+1. .envに環境変数入れて、
 
 ```bash
 yarn dev
@@ -39,23 +41,19 @@ _app.ts の中に、header とコンテンツエリアを包むコンポーネ�
 
 "どう触ったか"は、これ。
 
-[https://github.com/hkoma2jp/blog/issues/1](https://github.com/hkoma2jp/blog/issues/1)
-
 [ブランクテーマ · Issue #1 · hkoma2jp/blog](https://github.com/hkoma2jp/blog/issues/1)
 
 Readmeを書き換える気力もなく…
 
 いえ、後ほど書き換えておきます🙇🏻‍♂️
 
-4. Production にしたいブランチをgithub に pushする。
+1. Production にしたいブランチをgithub に pushする。
 
 vercel側でmasterブランチが繋がってしまって、設定だけでは希望のブランチをProductionとしてくれない。再度pushしたタイミングで、ビルドが走り、そこで差し代わった。
 
 5. Vercelに環境変数を入れて設定する。
 
 ていうか、もうほぼこちらで🙇🏻‍♂️
-
-[https://qiita.com/serinuntius/items/d4b1e9ef53b59033f60](https://qiita.com/serinuntius/items/d4b1e9ef53b59033f607)
 
 [notionバックエンドのzeit製ヘッドレスCMS"Notion Blog"が激アツ🔥 - Qiita](https://qiita.com/serinuntius/items/d4b1e9ef53b59033f607)
 
@@ -68,7 +66,7 @@ touch .env
 
 で、./.env の中に、環境変数を書いておくと、ローカルでブラウザプレビューする時に既存記事が挿入された状態で見える。もちろん.gitignoreしておくこと。
 
-6. ドメイン設定してdeploy。普通にドメインのDNSのAレコードにIPアドレス入れて設定の後、
+1. ドメイン設定してdeploy。普通にドメインのDNSのAレコードにIPアドレス入れて設定の後、
 
 ```bash
 dig @8.8.8.8 +short mydomain.com
@@ -88,8 +86,6 @@ dig @1.1.1.1 +short mydomain.com
 ```
 
 と追記しておく。本家に書いてあるよ、と書いてあった。本家を推奨。
-
-[https://teratail.com/questions/268850](https://teratail.com/questions/268850)
 
 [[Next.js] Pretended Pageというアイコンが消せない｜teratail](https://teratail.com/questions/268850)
 
