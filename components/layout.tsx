@@ -9,7 +9,8 @@ import 'prismjs/plugins/unescaped-markup/prism-unescaped-markup.min.js'
 import React, { useEffect } from 'react'
 
 const name = 'hkoma2jp'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = '盡人事聽天命'
+const metaDescription = 'なかなか打席が回ってこない人が日常を書き綴ります。'
 
 export default function Layout({
   children,
@@ -27,7 +28,7 @@ export default function Layout({
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content={metaDescription}
         />
         <meta
           property="og:image"
@@ -49,7 +50,8 @@ export default function Layout({
               width={144}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h2 className={utilStyles.headingLg}>{name}</h2>
+            <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
           </>
         ) : (
           <>
