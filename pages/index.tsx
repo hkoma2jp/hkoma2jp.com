@@ -21,8 +21,9 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Engineer / Director</p>
-        <p>台湾在住。ほんま散らかしてる。</p>
+      <h2 className={utilStyles.headingLg}>Profile</h2>
+        <p>Engineer / TechLead</p>
+        <p>2016年〜2021年台湾で働いてた。ほんま散らかしてる。</p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>

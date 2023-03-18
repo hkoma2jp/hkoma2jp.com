@@ -50,3 +50,44 @@
 .lightText {
   color: #666;
 }
+
+.post table {
+  width: 100%;
+  font-size: .8rem;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.post table th:first-child {
+  border-radius: 0;
+}
+
+.post table th:last-child {
+  border-radius: 0;
+}
+
+.post table tr:last-child td:first-child {
+  border-radius: 0;
+}
+
+.post table tr:last-child td:last-child {
+  border-radius: 0;
+}
+
+.post table th {
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid #cccccc;
+}
+
+.post table td {
+  padding: 10px;
+  border-left: 1px solid #cccccc;
+  border-top: none;
+  border-bottom: 1px solid #cccccc;
+  color: #363636;
+}
+
+.post table td:last-child {
+  border-right: 1px solid #cccccc;
+}
