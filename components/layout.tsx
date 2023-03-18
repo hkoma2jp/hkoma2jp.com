@@ -42,36 +42,36 @@ export default function Layout({
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h2 className={utilStyles.headingLg}>{name}</h2>
+            <div className="logo">
+              <Image
+                priority
+                src="/images/profile.jpg"
+                className={utilStyles.borderCircle}
+                height={144}
+                width={144}
+                alt={name}
+              />
+              <h2 className={utilStyles.headingLg}>{name}</h2>
+            </div>
             <h1 className={utilStyles.heading2Xl}>{siteTitle}</h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                <Image
-                  priority
-                  src="/images/profile.jpg"
-                  className={utilStyles.borderCircle}
-                  height={144}
-                  width={144}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <div className="logo">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                  <Image
+                    priority
+                    src="/images/profile.jpg"
+                    className={utilStyles.borderCircle}
+                    height={144}
+                    width={144}
+                    alt={name}
+                  />
               </Link>
-            </h2>
+              <Link href="/">
+                <h2 className={utilStyles.headingLg}>{name}</h2>
+              </Link>
+            </div>
           </>
         )}
       </header>
